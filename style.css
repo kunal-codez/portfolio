@@ -140,6 +140,10 @@ nav{
     font-weight: bolder;
 }
 
+.aboutImg{
+    width:20px;
+}
+
 .skill-card{
     width: 90%;
     height: 90vh;
@@ -214,7 +218,12 @@ h2 span{
 }
 
 #education{
+    padding: 10px;
     background: linear-gradient(#7b26b5,#932ce2);
+}
+
+#education h2 span{
+    color:#b070da;
 }
 
 .allEdu{
@@ -262,4 +271,105 @@ h2 span{
 
 .prevEdu{
     display: flex;
+}
+
+#contact{
+margin-bottom: 40px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tocontact{
+    width:45%;
+}
+
+.tocontact h3{
+    font-size: x-large;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactInfo a{
+    text-decoration: none;
+    color: white;
+}
+
+.email,.linkedin,.github{
+    width: 100%;
+    height: 74px;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #8d45bd;
+    opacity: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.email span,.linkedin span,.github span{
+    font-size: 20px;
+    color: #afa6b5;
+}
+
+.email img,.linkedin img,.github img{
+    height: 55px;
+    width: auto;
+    padding-left: 5%;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.emailid, .LinkedIn,.GitHub{
+    padding-left: 10px;
+}
+
+input , textarea{
+    width:95%;
+    padding: 2%;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    border-color: #ae49fb;
+    background-color: #711eb0;
+    color: rgb(167, 11, 11);
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea{
+    height: 110px;
+}
+
+input:focus,textarea:focus{
+    border: 2px solid #d299fe;
+}
+
+button{
+    justify-content: center;
+    color:white;
+    width: 100%;
+    height: 42px;
+    font-size: 17px;
+    background: radial-gradient(#924dbf);
+    padding: 5px 12px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 7px 3px #720cbb;
+    transition: all 0.2s ;
+}
+
+button:hover{
+    transform: scale(1.02);
+    background: radial-gradient(#aa50e5);
+    box-shadow: 0px 7px 3px #720cbb
 }
