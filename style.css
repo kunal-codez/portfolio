@@ -7,6 +7,10 @@ body{
     color: white;
 }
 
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 hr.line{
     color: #ae49fb;
     border: none;
@@ -94,11 +98,16 @@ nav{
 
 .myImage{
     width: 43%;
-    height: 50vh;
+    height: auto;
     border: 3px solid #ae49fb;
     border-radius: 5%;
-    padding: 5% 5% 5% 5%;
-    margin: 5%
+    padding: 2% 2%;
+    margin: 5%;
+}
+
+.myImage img{
+    width: 100%;
+    object-fit: contain;
 }
 
 .myImageText{
@@ -120,12 +129,13 @@ nav{
     display: flex;
     flex-direction: column;
     width: 24%;
-    height: 220px;
+    height: auto;
     border:none;
     border-radius: 5%;
     background: linear-gradient(#4a2574,#7b26b5);
-    padding: 2rem;          
-    justify-content: flex-end;
+    padding: 1rem;          
+    justify-content: center;
+    align-items:flex-end;
     box-shadow:0px 7px 5px#591aa6;
     transition: all 0.5s;
 }
@@ -137,11 +147,14 @@ nav{
 }
 
 .about20 span{
+    font-size: x-large;
     font-weight: bolder;
 }
 
-.aboutImg{
-    width:20px;
+.aboutImg img{
+    width:80%;
+    padding: 0%;
+    margin: 0%;
 }
 
 .skill-card{
@@ -252,7 +265,7 @@ h2 span{
     box-shadow: 4px 7px 5px #2c0854;
 }
 
-.currentPursueData .degree{
+.currentPursueData .degree{ 
     font-size: 21px;
 }
 
@@ -270,7 +283,34 @@ h2 span{
 }
 
 .prevEdu{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
     display: flex;
+    justify-content: space-between;
+}
+
+.prevEdu0{
+    width:30%;
+    height:110px;
+    border: none;
+    border-radius: 12px;
+    background-color: #7107b8;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.preEdu1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prevEdu0:hover{
+    transform:scale(1.005);
+    background: linear-gradient(#7107b8,#8510d8);
+    box-shadow: 4px 7px 5px #2c0854;
 }
 
 #contact{
