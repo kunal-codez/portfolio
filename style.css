@@ -108,6 +108,8 @@ nav{
 .myImage img{
     width: 100%;
     object-fit: contain;
+    border: none;
+    border-radius: 5%;
 }
 
 .myImageText{
@@ -204,7 +206,7 @@ h2 span{
     display: flex;
     flex-direction: column;
     padding-right: 8rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .skill21,.skill22{
