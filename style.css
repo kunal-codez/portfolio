@@ -383,7 +383,7 @@ input , textarea{
     border-radius: 5px;
     border-color: #ae49fb;
     background-color: #711eb0;
-    color: rgb(167, 11, 11);
+    color: rgb(255, 255, 255);
     box-sizing: border-box;
     outline: none;
 }
