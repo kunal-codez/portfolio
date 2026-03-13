@@ -100,7 +100,7 @@
                     <div class="skill3"></div>
                 </div>
             </div>
-        </section><br><br>
+        </section>
         <hr class="line"><br>
         <section id="education">
             <h2> My <span>Education</span></h2>
@@ -138,32 +138,44 @@
                     <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
                         vision. You can reach out through any of these meaans</p>
                     <div class="contactInfo">
-                        <a href="katiyarkunal@gmail.com"><div class="email">
-                            <div><img src="images/email-1-svgrepo-com (2).png"></div>
-                            <div class="emailid"><span>Email</span><br>katiyarkunal@gmail.com</div>
-                        </div></a>
-                        <a href="https://www.linkedin.com/in/kunal-katiyar-05kk"><div class="linkedin">
-                            <div><img src="images/linkedin-svgrepo-com (1).png"></div>
-                            <div class="LinkedIn"><span>LinkedIn</span><br>https://www.linkedin.com/in/kunal-katiyar-05kk</div>
-                        </div></a>
-                        <a href="https://github.com/kunal-codez"><div class="github">
-                            <div><img src="images/github-142-svgrepo-com.png"></div>
-                            <div class="GitHub"><span>GitHub</span><br>https://github.com/kunal-codez</div>
-                        </div></a>
+                        <a href="katiyarkunal@gmail.com">
+                            <div class="email">
+                                <div><img src="images/email-1-svgrepo-com (2).png"></div>
+                                <div class="emailid"><span>Email</span><br>katiyarkunal@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kunal-katiyar-05kk">
+                            <div class="linkedin">
+                                <div><img src="images/linkedin-svgrepo-com (1).png"></div>
+                                <div class="LinkedIn">
+                                    <span>LinkedIn</span><br>https://www.linkedin.com/in/kunal-katiyar-05kk</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/kunal-codez">
+                            <div class="github">
+                                <div><img src="images/github-142-svgrepo-com.png"></div>
+                                <div class="GitHub"><span>GitHub</span><br>https://github.com/kunal-codez</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="tocontact contactByMeassage">
                     <label>Name : </label>
                     <input type="text" id="name" placeholder="Enter Your Name">
                     <label>Email : </label><br>
-                    <input type="email" id="name" placeholder="Enter Your Email">
+                    <input type="email" id="email" placeholder="Enter Your Email">
                     <label>Message</label>
-                    <textarea placeholder="Enter Your Message"></textarea>
-                    <button value="Submit">Send Message</button>
+                    <textarea id="message" placeholder="Enter Your Message"></textarea>
+                    <button onclick="sub()" value="Submit">Send Message</button>
                 </div>
             </div>
+            <dialog id="successSubmitalert">
+                <p>Message is sent successfully.</p>
+                <button id="closeBtn">OK</button>
+            </dialog>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
