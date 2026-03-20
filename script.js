@@ -1,18 +1,14 @@
 const allSkills = document.querySelectorAll(".skill");
-
 allSkills.forEach(box => {
-    // When mouse enters: Change to Image
-    box.addEventListener('mouseenter', () => {
-
-        const originalText = box.getAttribute('data-name');
+    box.addEventListener('mouseenter' ,()=>{
+        const originalText = box.getAttribute   ('data-name');
         box.innerHTML = originalText;
     });
-    // When mouse leaves: Change back to Text
-    box.addEventListener('mouseleave', () => {
-        const imgSrc = box.getAttribute('data-img');
-        box.innerHTML = `<img src="${imgSrc}" alt="Logo" style="max-height: 100%; width: auto;">`;
+    box.addEventListener('mouseleave',()=>{
+        const imgSrc= box.getAttribute('data-img');
+        box.innerHTML=`<img src="${imgSrc}" alt="Logo" style="max-height: 100%; width: auto;">`; 
     });
-});
+})
 
 function sub() {
     var name = document.getElementById("name").value;
